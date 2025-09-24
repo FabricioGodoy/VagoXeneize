@@ -17,7 +17,7 @@ const Hero = () => {
     <section
       className="relative h-screen flex items-center justify-center text-center text-white"
       style={{
-        backgroundImage: "url('/img/bombonera.jpg')", // poné tu imagen acá en /public/img
+        backgroundImage:`url(${process.env.PUBLIC_URL}/img/fotoBoca.jpeg)`, // poné tu imagen acá en /public/img
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -34,7 +34,9 @@ const Hero = () => {
           ¡El orgullo xeneize en cada prenda! Modelos exclusivos para hinchas de corazón.
         </p>
         <button className="mt-8 bg-gradient-to-r from-yellow-400 to-blue-600 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:scale-105 active:scale-95 transition-transform">
+         <a href='#coleccion'>
           Ver Colección
+        </a>
         </button>
         <div className="mt-12">
           <ArrowDownIcon className="w-8 h-8 mx-auto text-yellow-400 animate-bounce drop-shadow-md" />

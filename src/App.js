@@ -58,7 +58,7 @@ const App = () => {
       <Hero />
       <TwitterSection />
       <main className="container mx-auto px-4 py-12 flex-grow">
-        <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center">Nuestra Colección</h2>
+        <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center" id='coleccion'>Nuestra Colección</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {products.map(product => (
             <ProductCard key={product.id} product={product} onOpenModal={openModal} />
